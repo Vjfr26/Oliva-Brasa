@@ -4,10 +4,10 @@ import { Menu, X } from 'lucide-react'
 import { EASE } from './Reveal'
 
 const LINKS = [
-  { label: 'Inicio', href: '#inicio' },
-  { label: 'Servicios', href: '#servicios' },
-  { label: 'Sobre Nosotros', href: '#nosotros' },
-  { label: 'Testimonios', href: '#testimonios' },
+  { label: 'Início', href: '#inicio' },
+  { label: 'Serviços', href: '#servicos' },
+  { label: 'Sobre Nós', href: '#nos' },
+  { label: 'Testemunhos', href: '#testemunhos' },
   { label: 'Contacto', href: '#contacto' },
 ]
 
@@ -57,14 +57,14 @@ export default function Navbar() {
           <button
             onClick={() => setOpen(true)}
             className="text-cream lg:hidden"
-            aria-label="Abrir menú"
+            aria-label="Abrir menu"
           >
             <Menu size={26} />
           </button>
         </nav>
       </motion.header>
 
-      {/* Menú móvil a pantalla completa */}
+      {/* Menu móvel em ecrã inteiro */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -78,7 +78,7 @@ export default function Navbar() {
               <span className="font-display text-2xl">
                 Oliva <em className="text-gold italic">&amp;</em> Brasa
               </span>
-              <button onClick={() => setOpen(false)} aria-label="Cerrar menú" className="text-cream">
+              <button onClick={() => setOpen(false)} aria-label="Fechar menu" className="text-cream">
                 <X size={28} />
               </button>
             </div>

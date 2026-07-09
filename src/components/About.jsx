@@ -27,10 +27,10 @@ function Counter({ to, suffix = '' }) {
 }
 
 const FEATURES = [
-  'Producto local y de temporada',
-  'Carta renovada cada estación',
-  'Opciones vegetarianas y sin gluten',
-  'Sumiller y cava propia',
+  'Produto local e sazonal',
+  'Carta renovada a cada estação',
+  'Opções vegetarianas e sem glúten',
+  'Escanção e garrafeira própria',
 ]
 
 export default function About() {
@@ -43,9 +43,9 @@ export default function About() {
   const ySmall = useTransform(scrollYProgress, [0, 1], [-30, 50])
 
   return (
-    <section id="nosotros" className="relative overflow-hidden py-28 lg:py-36">
+    <section id="nos" className="relative overflow-hidden py-28 lg:py-36">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:gap-20 lg:px-10">
-        {/* Composición de imágenes con parallax */}
+        {/* Composição de imagens com parallax */}
         <div ref={mediaRef} className="relative">
           <motion.figure
             style={{ y: yMain }}
@@ -53,7 +53,7 @@ export default function About() {
           >
             <img
               src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=1300&auto=format&fit=crop"
-              alt="Nuestro chef emplatando un plato de autor"
+              alt="O nosso chef a empratar um prato de autor"
               loading="lazy"
               className="h-[480px] w-full object-cover"
             />
@@ -65,7 +65,7 @@ export default function About() {
           >
             <img
               src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?q=80&w=900&auto=format&fit=crop"
-              alt="Sala del restaurante"
+              alt="Sala do restaurante"
               loading="lazy"
               className="h-[260px] w-full object-cover"
             />
@@ -79,9 +79,9 @@ export default function About() {
               <Counter to={15} />
             </strong>
             <span className="mt-1 text-center text-[11px] uppercase tracking-[0.2em] text-cream/70">
-              años de
+              anos de
               <br />
-              tradición
+              tradição
             </span>
           </Reveal>
 
@@ -93,23 +93,23 @@ export default function About() {
           <Reveal>
             <p className="mb-4 flex items-center gap-4 text-[13px] font-medium uppercase tracking-[0.3em] text-gold">
               <span className="h-px w-12 bg-gold" />
-              Nuestra historia
+              A nossa história
             </p>
             <h2 className="font-display text-4xl leading-tight sm:text-5xl">
-              Sobre <em className="text-gold-light italic">Nosotros</em>
+              Sobre <em className="text-gold-light italic">Nós</em>
             </h2>
           </Reveal>
 
           <Reveal delay={0.1}>
             <p className="mt-7 leading-relaxed text-cream/70">
-              Oliva &amp; Brasa nació en 2009 como un pequeño comedor familiar y hoy es un
-              referente de la cocina de autor en la ciudad. Creemos en el producto de
-              proximidad, en el fuego lento y en la mesa como punto de encuentro.
+              O Oliva &amp; Brasa nasceu em 2009 como um pequeno restaurante familiar e hoje
+              é uma referência da cozinha de autor na cidade. Acreditamos no produto de
+              proximidade, no fogo lento e na mesa como ponto de encontro.
             </p>
             <p className="mt-4 leading-relaxed text-cream/70">
-              Nuestro equipo, liderado por el chef Martín Oliva, reinterpreta recetas de
-              siempre con técnica contemporánea. Cada temporada renovamos la carta para
-              contar una nueva historia con los mejores ingredientes del momento.
+              A nossa equipa, liderada pelo chef Martín Oliva, reinterpreta receitas de
+              sempre com técnica contemporânea. A cada estação renovamos a carta para
+              contar uma nova história com os melhores ingredientes do momento.
             </p>
           </Reveal>
 
@@ -133,7 +133,7 @@ export default function About() {
                   <Counter to={120} suffix="+" />
                 </strong>
                 <p className="mt-2 text-[11px] uppercase tracking-[0.18em] text-cream/60">
-                  Platos de autor
+                  Pratos de autor
                 </p>
               </div>
               <div className="px-2 text-center sm:px-6">
@@ -141,7 +141,7 @@ export default function About() {
                   <Counter to={48} suffix="k" />
                 </strong>
                 <p className="mt-2 text-[11px] uppercase tracking-[0.18em] text-cream/60">
-                  Clientes felices
+                  Clientes felizes
                 </p>
               </div>
               <div className="px-2 text-center sm:px-6">
@@ -149,7 +149,7 @@ export default function About() {
                   <Counter to={12} />
                 </strong>
                 <p className="mt-2 text-[11px] uppercase tracking-[0.18em] text-cream/60">
-                  Premios
+                  Prémios
                 </p>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function About() {
               href="#contacto"
               className="mt-10 inline-block bg-gold px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.2em] text-ink transition-all duration-300 hover:bg-gold-light hover:scale-[1.02]"
             >
-              Conócenos en persona
+              Conheça-nos pessoalmente
             </a>
           </Reveal>
         </div>

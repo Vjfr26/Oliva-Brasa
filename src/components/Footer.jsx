@@ -21,10 +21,10 @@ function FacebookIcon({ size = 17 }) {
 }
 
 const NAV = [
-  { label: 'Inicio', href: '#inicio' },
-  { label: 'Servicios', href: '#servicios' },
-  { label: 'Sobre Nosotros', href: '#nosotros' },
-  { label: 'Testimonios', href: '#testimonios' },
+  { label: 'Início', href: '#inicio' },
+  { label: 'Serviços', href: '#servicos' },
+  { label: 'Sobre Nós', href: '#nos' },
+  { label: 'Testemunhos', href: '#testemunhos' },
   { label: 'Contacto', href: '#contacto' },
 ]
 
@@ -41,14 +41,14 @@ export default function Footer() {
             Oliva <em className="text-gold italic">&amp;</em> Brasa
           </a>
           <p className="mt-4 text-[15px] leading-relaxed text-cream/55">
-            Cocina de autor con alma de casa. Producto local, fuego lento y
-            hospitalidad desde 2009.
+            Cozinha de autor com alma de casa. Produto local, fogo lento e
+            hospitalidade desde 2009.
           </p>
           <div className="mt-6 flex gap-3">
             {[
               { icon: InstagramIcon, label: 'Instagram' },
               { icon: FacebookIcon, label: 'Facebook' },
-              { icon: MapPin, label: 'Cómo llegar' },
+              { icon: MapPin, label: 'Como chegar' },
             ].map(({ icon: Icon, label }) => (
               <a
                 key={label}
@@ -64,7 +64,7 @@ export default function Footer() {
 
         <div>
           <h4 className="mb-5 text-[13px] font-semibold uppercase tracking-[0.25em] text-gold">
-            Navegación
+            Navegação
           </h4>
           <ul className="space-y-3">
             {NAV.map((link) => (
@@ -86,26 +86,26 @@ export default function Footer() {
           </h4>
           <ul className="space-y-3 text-[15px] text-cream/60">
             <li>
-              <a href="tel:+34912345678" className="transition-colors hover:text-gold">
-                +34 912 345 678
+              <a href="tel:+351912345678" className="transition-colors hover:text-gold">
+                +351 912 345 678
               </a>
             </li>
             <li>
-              <a href="mailto:reservas@olivaybrasa.com" className="transition-colors hover:text-gold">
-                reservas@olivaybrasa.com
+              <a href="mailto:reservas@olivaebrasa.pt" className="transition-colors hover:text-gold">
+                reservas@olivaebrasa.pt
               </a>
             </li>
-            <li>Av. de los Sabores 123, Centro Histórico</li>
+            <li>Av. dos Sabores 123, Centro Histórico</li>
           </ul>
         </div>
 
         <div>
           <h4 className="mb-5 text-[13px] font-semibold uppercase tracking-[0.25em] text-gold">
-            Horario
+            Horário
           </h4>
           <ul className="space-y-3 text-[15px] text-cream/60">
             <li className="flex justify-between gap-4">
-              <span>Mar – Vie</span>
+              <span>Ter – Sex</span>
               <span className="text-cream/80">13:00 – 23:30</span>
             </li>
             <li className="flex justify-between gap-4">
@@ -113,8 +113,8 @@ export default function Footer() {
               <span className="text-cream/80">12:00 – 00:00</span>
             </li>
             <li className="flex justify-between gap-4">
-              <span>Lunes</span>
-              <span className="text-gold">Cerrado</span>
+              <span>Segunda</span>
+              <span className="text-gold">Encerrado</span>
             </li>
           </ul>
         </div>
@@ -122,16 +122,16 @@ export default function Footer() {
 
       <div className="border-t border-white/8 py-6">
         <p className="text-center text-[13px] text-cream/40">
-          © 2026 Oliva &amp; Brasa · Todos los derechos reservados
+          © 2026 Oliva &amp; Brasa · Todos os direitos reservados
         </p>
       </div>
 
-      {/* Botón volver arriba */}
+      {/* Botão voltar ao topo */}
       <AnimatePresence>
         {showTop && (
           <motion.a
             href="#inicio"
-            aria-label="Volver arriba"
+            aria-label="Voltar ao topo"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}

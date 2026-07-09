@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 
 const ITEMS = [
-  'Cocina de temporada',
-  'Producto local',
-  'Fuego lento',
-  'Cava propia',
+  'Cozinha sazonal',
+  'Produto local',
+  'Fogo lento',
+  'Garrafeira própria',
   'Eventos privados',
-  'Repostería artesanal',
+  'Pastelaria artesanal',
 ]
 
 export default function Marquee() {

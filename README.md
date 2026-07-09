@@ -1,31 +1,31 @@
-# Oliva & Brasa — Sitio web de restaurante
+# Oliva & Brasa — Site de restaurante
 
-Landing page profesional para un restaurante de cocina de autor, con diseño oscuro elegante, imágenes de alta calidad y animaciones fluidas.
+Landing page profissional para um restaurante de cozinha de autor, com design escuro elegante, imagens de alta qualidade e animações fluidas. Conteúdo em português de Portugal.
 
 ## Stack
 
 - **React 19** + **Vite 8**
-- **Tailwind CSS v4** (paleta personalizada: tinta, dorado, crema)
-- **Framer Motion** (parallax, reveals al hacer scroll, carrusel, contadores)
-- **Lucide React** (iconografía)
+- **Tailwind CSS v4** (paleta personalizada: tinta, dourado, creme)
+- **Framer Motion** (parallax, reveals ao fazer scroll, carrossel, contadores)
+- **Lucide React** (iconografia)
 
-## Secciones
+## Secções
 
-| Sección | Destacado |
+| Secção | Destaque |
 |---|---|
-| Inicio (Hero) | Imagen a pantalla completa con zoom lento y parallax, entrada escalonada del titular |
-| Servicios | Retícula tipo *bento* con 6 tarjetas animadas y tile de llamada a la acción |
-| Sobre Nosotros | Composición de imágenes con parallax y contadores animados |
-| Testimonios | Carrusel con auto-avance y transiciones direccionales |
-| Contacto | Formulario de reservas con estado de éxito animado |
+| Início (Hero) | Imagem em ecrã inteiro com zoom lento e parallax, entrada escalonada do título |
+| Serviços | Grelha tipo *bento* com 6 cartões animados e tile de chamada à ação |
+| Sobre Nós | Composição de imagens com parallax e contadores animados |
+| Testemunhos | Carrossel com avanço automático e transições direcionais |
+| Contacto | Formulário de reservas com estado de sucesso animado |
 
-Extras: navbar translúcido con blur al hacer scroll, menú móvil a pantalla completa, cinta *marquee* infinita, banda parallax con cita del chef y botón "volver arriba".
+Extras: navbar translúcida com blur ao fazer scroll, menu móvel em ecrã inteiro, faixa *marquee* infinita, banda parallax com citação do chef e botão "voltar ao topo".
 
-## Desarrollo
+## Desenvolvimento
 
 ```bash
 npm install
-npm run dev      # servidor de desarrollo en http://localhost:5173
-npm run build    # build de producción en dist/
-npm run preview  # previsualizar el build
+npm run dev      # servidor de desenvolvimento em http://localhost:5173
+npm run build    # build de produção em dist/
+npm run preview  # pré-visualizar o build
 ```

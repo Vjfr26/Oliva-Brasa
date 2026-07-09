@@ -41,7 +41,7 @@ body {
   background: var(--color-gold);
 }
 
-/* Grano sutil sobre toda la página para textura tipo editorial */
+/* Grão subtil sobre toda a página para textura de tipo editorial */
 .grain::before {
   content: "";
   position: fixed;
@@ -52,7 +52,7 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
 }
 
-/* Inputs oscuros consistentes (date/select nativos) */
+/* Inputs escuros consistentes (date/select nativos) */
 input,
 select,
 textarea {

@@ -5,43 +5,43 @@ import Reveal, { EASE } from './Reveal'
 const SERVICES = [
   {
     icon: ChefHat,
-    title: 'Cocina Gourmet',
-    text: 'Menú degustación de temporada con producto local y técnica de vanguardia, firmado por nuestro chef ejecutivo.',
+    title: 'Cozinha Gourmet',
+    text: 'Menu de degustação sazonal com produto local e técnica de vanguarda, assinado pelo nosso chef executivo.',
     img: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1400&auto=format&fit=crop',
     span: 'lg:col-span-2',
   },
   {
     icon: PartyPopper,
     title: 'Eventos Privados',
-    text: 'Salones exclusivos para celebraciones, cenas de empresa y reuniones íntimas con menús a medida.',
+    text: 'Salões exclusivos para celebrações, jantares de empresa e reuniões íntimas com menus à medida.',
     img: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=1200&auto=format&fit=crop',
     span: '',
   },
   {
     icon: Truck,
-    title: 'Catering & Domicilio',
-    text: 'Llevamos nuestra cocina a tu evento: bodas, aniversarios y encuentros corporativos.',
+    title: 'Catering & Domicílio',
+    text: 'Levamos a nossa cozinha ao seu evento: casamentos, aniversários e encontros corporativos.',
     img: 'https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1200&auto=format&fit=crop',
     span: '',
   },
   {
     icon: Wine,
-    title: 'Cava & Maridaje',
-    text: 'Más de 300 etiquetas seleccionadas por nuestro sumiller para acompañar cada plato.',
+    title: 'Garrafeira & Harmonização',
+    text: 'Mais de 300 rótulos selecionados pelo nosso escanção para acompanhar cada prato.',
     img: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1200&auto=format&fit=crop',
     span: '',
   },
   {
     icon: Croissant,
-    title: 'Repostería Artesanal',
-    text: 'Postres de autor y panadería propia horneada cada mañana: el final dulce que tu mesa merece.',
+    title: 'Pastelaria Artesanal',
+    text: 'Sobremesas de autor e padaria própria cozida todas as manhãs: o final doce que a sua mesa merece.',
     img: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1200&auto=format&fit=crop',
     span: '',
   },
   {
     icon: GraduationCap,
-    title: 'Talleres de Cocina',
-    text: 'Aprende técnicas, secretos y recetas junto a nuestro equipo en la cocina de Oliva & Brasa.',
+    title: 'Workshops de Cozinha',
+    text: 'Aprenda técnicas, segredos e receitas junto da nossa equipa na cozinha do Oliva & Brasa.',
     img: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=1200&auto=format&fit=crop',
     span: '',
   },
@@ -57,7 +57,7 @@ function ServiceCard({ service, index }) {
       transition={{ duration: 0.8, delay: (index % 3) * 0.12, ease: EASE }}
       className={`group relative flex min-h-[380px] flex-col justify-end overflow-hidden border border-white/8 bg-coal ${service.span}`}
     >
-      {/* Imagen de fondo con zoom en hover */}
+      {/* Imagem de fundo com zoom em hover */}
       <img
         src={service.img}
         alt={service.title}
@@ -79,7 +79,7 @@ function ServiceCard({ service, index }) {
         </p>
       </div>
 
-      {/* Línea dorada inferior que crece en hover */}
+      {/* Linha dourada inferior que cresce em hover */}
       <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-gold transition-all duration-500 group-hover:w-full" />
     </motion.article>
   )
@@ -87,18 +87,18 @@ function ServiceCard({ service, index }) {
 
 export default function Services() {
   return (
-    <section id="servicios" className="relative py-28 lg:py-36">
+    <section id="servicos" className="relative py-28 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mb-16 max-w-2xl">
           <p className="mb-4 flex items-center gap-4 text-[13px] font-medium uppercase tracking-[0.3em] text-gold">
             <span className="h-px w-12 bg-gold" />
-            Lo que ofrecemos
+            O que oferecemos
           </p>
           <h2 className="font-display text-4xl leading-tight sm:text-5xl">
-            Nuestros <em className="text-gold-light italic">Servicios</em>
+            Os Nossos <em className="text-gold-light italic">Serviços</em>
           </h2>
           <p className="mt-5 text-lg text-cream/60">
-            Una propuesta gastronómica completa: del almuerzo íntimo a la gran celebración.
+            Uma proposta gastronómica completa: do almoço íntimo à grande celebração.
           </p>
         </Reveal>
 
@@ -107,7 +107,7 @@ export default function Services() {
             <ServiceCard key={service.title} service={service} index={i} />
           ))}
 
-          {/* Tile CTA para cerrar la retícula */}
+          {/* Tile CTA para fechar a grelha */}
           <motion.a
             href="#contacto"
             initial={{ opacity: 0, y: 56 }}
@@ -118,15 +118,15 @@ export default function Services() {
           >
             <div>
               <p className="text-[13px] font-medium uppercase tracking-[0.3em] text-gold">
-                ¿Un evento especial?
+                Um evento especial?
               </p>
               <h3 className="mt-4 max-w-md font-display text-3xl leading-snug">
-                Diseñamos la experiencia perfecta para tu ocasión.{' '}
-                <em className="text-gold-light italic">Hablemos.</em>
+                Desenhamos a experiência perfeita para a sua ocasião.{' '}
+                <em className="text-gold-light italic">Vamos conversar.</em>
               </h3>
             </div>
             <span className="inline-flex items-center gap-3 text-[13px] font-semibold uppercase tracking-[0.2em] text-gold">
-              Contactar ahora
+              Contactar agora
               <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-2" />
             </span>
             <span className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-gold/10 blur-3xl transition-opacity duration-700 group-hover:opacity-100 opacity-40" />
