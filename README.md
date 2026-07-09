@@ -1,16 +1,31 @@
-# React + Vite
+# Oliva & Brasa — Sitio web de restaurante
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page profesional para un restaurante de cocina de autor, con diseño oscuro elegante, imágenes de alta calidad y animaciones fluidas.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **Vite 8**
+- **Tailwind CSS v4** (paleta personalizada: tinta, dorado, crema)
+- **Framer Motion** (parallax, reveals al hacer scroll, carrusel, contadores)
+- **Lucide React** (iconografía)
 
-## React Compiler
+## Secciones
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Sección | Destacado |
+|---|---|
+| Inicio (Hero) | Imagen a pantalla completa con zoom lento y parallax, entrada escalonada del titular |
+| Servicios | Retícula tipo *bento* con 6 tarjetas animadas y tile de llamada a la acción |
+| Sobre Nosotros | Composición de imágenes con parallax y contadores animados |
+| Testimonios | Carrusel con auto-avance y transiciones direccionales |
+| Contacto | Formulario de reservas con estado de éxito animado |
 
-## Expanding the Oxlint configuration
+Extras: navbar translúcido con blur al hacer scroll, menú móvil a pantalla completa, cinta *marquee* infinita, banda parallax con cita del chef y botón "volver arriba".
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Desarrollo
+
+```bash
+npm install
+npm run dev      # servidor de desarrollo en http://localhost:5173
+npm run build    # build de producción en dist/
+npm run preview  # previsualizar el build
+```
